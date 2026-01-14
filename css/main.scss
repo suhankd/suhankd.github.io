@@ -1,0 +1,310 @@
+---
+---
+
+$accent: #FF0F00;
+
+$max-width: 740px;
+$med-width: 600px;
+$small-width: 480px;
+
+/* =========================
+   Basic
+   ========================= */
+
+body {
+    margin: 0;
+    font-family: "Inconsolata";
+    background-color: #FFFFDD;
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $accent;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    margin: 5px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+code {
+    background-color: #d8e7ff;
+    color: #002b72;
+}
+
+/* =========================
+   Layout helpers
+   ========================= */
+
+.pull-left { float: left; }
+.pull-right { float: right; }
+
+.container {
+    max-width: $max-width;
+    margin: auto;
+}
+
+/* =========================
+   Navbar
+   ========================= */
+
+.navbar {
+    padding: 30px 0 20px 0;
+
+    ul {
+        display: inline-block;
+        margin: 0;
+        padding: 5px 0;
+        margin-left: 20px;
+    }
+
+    li {
+        list-style-type: none;
+        margin: 0 5px 0 10px;
+    }
+
+    .site-title {
+        font-size: 32px;
+        color: #272727;
+        display: inline-block;
+    }
+}
+
+/* =========================
+   Index / posts
+   ========================= */
+
+.post-card {
+    margin: 1em 0;
+
+    .title {
+        max-width: 500px;
+        color: #272727;
+        display: inline-block;
+        font-size: 30px;
+    }
+
+    .details {
+        @extend .pull-right;
+        text-align: right;
+        margin-left: 20px;
+        font-size: 15px;
+    }
+
+    .subtitle {
+        max-width: 500px;
+    }
+}
+
+.no-post {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* =========================
+   Pages
+   ========================= */
+
+.page-title {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.page-subtitle {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+.footer {
+    text-align: center;
+    font-size: small;
+    margin: 2em 0 1em;
+
+    a {
+        color: black;
+    }
+}
+
+/* =========================
+   Typography
+   ========================= */
+
+.content {
+    line-height: 1.5;
+
+    h1, h2, h3, h4 {
+        margin-block-start: 2em !important;
+        margin-block-end: 0 !important;
+    }
+
+    h1::after, h2::after, h3::after, h4::after {
+        content: '';
+        display: block;
+        width: 50%;
+        border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 0.5px solid rgba(50, 50, 50, 0.3);
+    }
+
+    ul {
+        padding: 0 20px;
+    }
+
+    ul > li {
+        margin: 5px 0;
+    }
+
+    ol {
+        padding: 0 30px;
+        counter-reset: list;
+    }
+
+    ol > li {
+        list-style: none;
+        position: relative;
+        margin: 5px 0;
+    }
+
+    ol > li::before {
+        content: "[" counter(list, decimal) "] ";
+        counter-increment: list;
+        position: absolute;
+        left: -30px;
+    }
+
+    blockquote {
+        border-left: 5px solid #333;
+        margin: 5px 0;
+        padding: 0 8px;
+        font-style: italic;
+    }
+
+    img {
+        margin: 10px;
+        max-width: $max-width;
+        text-align: center;
+    }
+}
+
+/* =========================
+   ABOUT PAGE FIX (IMPORTANT)
+   ========================= */
+
+.content .about {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content .about h1::after,
+.content .about h2::after,
+.content .about h3::after,
+.content .about h4::after {
+    content: none;
+}
+
+/* =========================
+   Tables
+   ========================= */
+
+table {
+    margin: 15px 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tr {
+    border-top: 1px solid #ccc;
+    background-color: white;
+}
+
+table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 6px 13px;
+}
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 800px) {
+    .container {
+        max-width: $med-width;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        max-width: 83%;
+    }
+
+    .navbar ul {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        text-align: center;
+        padding-top: 50px;
+
+        ul {
+            padding: 10px 0;
+            margin: 0;
+            display: block;
+            width: 100%;
+        }
+
+        li {
+            margin: 0;
+        }
+
+        .pull-left,
+        .site-title {
+            float: none;
+            width: 100%;
+        }
+    }
+}
+
+/* ==== FORCE FIX ==== */
+
+/* Remove heading underline everywhere */
+.content h1::after,
+.content h2::after,
+.content h3::after,
+.content h4::after {
+    content: none !important;
+    border: none !important;
+    display: none !important;
+}
+
+/* Center About page text */
+.content p {
+    text-align: center;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+    text-align: center !important;
+}

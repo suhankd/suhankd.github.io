@@ -1,0 +1,28 @@
+title: "royalewithcheese's blog"
+author: royalewithcheese
+
+baseurl: ""
+
+footer_only_homepage: true
+footer_url: ""
+footer_text: ""
+
+# profile-picture: assets/profile.png
+# favicon_location: assets/favicon.ico
+
+permalink: /:year-:month-:day-:title/
+sass:
+    style: compressed
+    sass_dir: css
+
+navbar:
+ - name: "About"
+   link: "about"
+ - name: "GitHub"
+   absolute-link: "https://github.com/suhankd"
+
+markdown: kramdown
+
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
