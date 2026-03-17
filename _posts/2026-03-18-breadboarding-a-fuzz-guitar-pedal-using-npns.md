@@ -1,5 +1,4 @@
 ---
-layout: post
 title: breadboarding a fuzz guitar pedal using npn transistors
 subtitle: i prefer mosfets im sorry
 tags: [circuits]
