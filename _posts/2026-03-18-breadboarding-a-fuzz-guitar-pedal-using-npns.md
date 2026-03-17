@@ -1,8 +1,8 @@
 ---
 layout: post
-title: solving pokemon type triangles with graph theory
-subtitle:
-tags: [math]
+title: breadboarding a fuzz-face pedal using npns
+subtitle: im a fan of mosfets now
+tags: [circuits, audio]
 ---
 
 
