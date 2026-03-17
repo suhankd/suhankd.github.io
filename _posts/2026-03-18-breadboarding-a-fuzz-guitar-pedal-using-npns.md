@@ -1,7 +1,7 @@
 ---
 layout: post
-title: building a fuzz guitar pedal using NPNs
-subtitle:
+title: breadboarding a fuzz guitar pedal using npn transistors
+subtitle: i prefer mosfets im sorry
 tags: [circuits]
 ---
 
@@ -9,7 +9,7 @@ tags: [circuits]
 
 Going to be a pretty short read, just explaining some interesting aspects of the circuit.
 
-This is a Fuzz-Face derivative, those 1970s Hendrix-y guitar pedals. It's a positive-ground circuit, which used Germanium PNP transistors, though I've used silicon. The schematic is shown below.
+This is a Fuzz-Face derivative, the Hendrix-era sound. It's a positive-ground circuit, which used Germanium PNP transistors, though I've used silicon. The schematic is shown below.
 
 <img style = "float : top" src = "../assets/schematic.png">
 
