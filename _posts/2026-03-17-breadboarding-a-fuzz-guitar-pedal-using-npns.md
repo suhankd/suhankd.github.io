@@ -1,6 +1,6 @@
 ---
 layout: post
-title: breadboarding a fuzz-face pedal using npns
+title: breadboarding a fuzz-face guitar pedal using npns
 subtitle: im a fan of mosfets now
 tags: [circuits, audio]
 ---
@@ -39,4 +39,4 @@ I could've chosen to omit the output cap to add some extra noise to the signal, 
 
 ## Testing
 
-Link - https://youtu.be/jybrcZpjhag?si=VNUbqHWYquAsPJC1
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jybrcZpjhag" frameborder="0" allowfullscreen></iframe>
