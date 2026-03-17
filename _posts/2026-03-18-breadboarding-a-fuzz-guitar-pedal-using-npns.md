@@ -1,8 +1,10 @@
 ---
-title: breadboarding a fuzz guitar pedal using npn transistors
-subtitle: i prefer mosfets im sorry
-tags: [circuits]
+layout: post
+title: solving pokemon type triangles with graph theory
+subtitle:
+tags: [math]
 ---
+
 
 <img style = "float : top" src = "../assets/breadboard.png">
 
