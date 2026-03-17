@@ -1,10 +1,9 @@
 ---
 layout: post
 title: breadboarding a fuzz-face guitar pedal using npns
-subtitle: im a fan of mosfets now
+subtitle: i prefer mosfets, im sorry
 tags: [circuits, audio]
 ---
-
 
 <img style = "float : top" src = "../assets/breadboard.png">
 
@@ -40,3 +39,5 @@ I could've chosen to omit the output cap to add some extra noise to the signal, 
 ## Testing
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jybrcZpjhag" frameborder="0" allowfullscreen></iframe>
+
+I added a bit of reverb and delay
